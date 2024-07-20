@@ -1,0 +1,21 @@
+{
+  "name": "sqlnode-api",
+  "version": "1.0.0",
+  "description": "Mysql and NodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "api-connect": "node --env-file .env insertDataReturnId.js",
+    "api-insert" :  "node --env-file .env insertData.js",
+    "api-insertbatch" :  "node --env-file .env insertDataBatch.js",
+    "api-query" :  "node --env-file .env query.js",
+    "api-update" :  "node --env-file .env update.js",
+    "api-truncate" :  "node --env-file .env truncate.js",
+    "api-callstore" :  "node --env-file .env storeProcedure.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
